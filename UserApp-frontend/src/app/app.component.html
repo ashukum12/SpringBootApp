@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<div class="d-flex" id="wrapper">
+
+		<div class="list-group-item-primary border-right" id="sidebar-wrapper">
+			<div class="sidebar-heading">User App</div>
+			<div class="list-group list-group-flush">
+				<a class="list-group-item list-group-item-primary" href="#">Home</a>
+				<a class="list-group-item list-group-item-primary" routerLink="/getUser">User List</a>
+				<a class="list-group-item list-group-item-primary" routerLink="/addUser">Add User</a>
+				<a class="list-group-item list-group-item-primary"></a>
+	
+			</div>
+		</div>
+
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg list-group-item-primary">
+  				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+			<div class="container-fluid">
+				<router-outlet></router-outlet>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
