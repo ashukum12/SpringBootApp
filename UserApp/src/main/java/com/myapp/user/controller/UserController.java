@@ -19,13 +19,13 @@ import com.myapp.user.model.User;
 import com.myapp.user.service.UserService;
 
 @RestController
-@RequestMapping(path = "/user")
+@RequestMapping(path = "/api")
 public class UserController {
 	
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping(path="/getUser", produces = "application/json")
+	@GetMapping
 	public List<User> getAllUser(){
 		return userService.getAllUser();
 	}
